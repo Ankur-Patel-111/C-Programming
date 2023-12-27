@@ -1,0 +1,73 @@
+main ()
+{
+  int D.40044;
+
+  {
+    struct Family_A a1;
+    struct Family_A a2;
+
+    try
+      {
+        Family_A::set_data (&a1);
+        Family_A::set_data (&a2);
+        Family_A::get_data (&a1);
+        Family_A::get_data (&a2);
+      }
+    finally
+      {
+        a1 = {CLOBBER};
+        a2 = {CLOBBER};
+      }
+  }
+  D.40044 = 0;
+  return D.40044;
+}
+
+
+Family_A::set_data (struct Family_A * const this)
+{
+  _1 = std::operator<< <std::char_traits<char> > (&cout, "Enter the cash and gold");
+  std::basic_ostream<char>::operator<< (_1, endl);
+  _2 = &this->cash;
+  _3 = std::basic_istream<char>::operator>> (&cin, _2);
+  _4 = &this->gold;
+  std::basic_istream<char>::operator>> (_3, _4);
+}
+
+
+Family_A::get_data (struct Family_A * const this)
+{
+  _1 = std::operator<< <std::char_traits<char> > (&cout, "cash - ");
+  _2 = this->cash;
+  _3 = std::basic_ostream<char>::operator<< (_1, _2);
+  std::basic_ostream<char>::operator<< (_3, endl);
+  _4 = std::operator<< <std::char_traits<char> > (&cout, "Gold - ");
+  _5 = this->gold;
+  _6 = std::basic_ostream<char>::operator<< (_4, _5);
+  std::basic_ostream<char>::operator<< (_6, endl);
+}
+
+
+__static_initialization_and_destruction_0 (int __initialize_p, int __priority)
+{
+  if (__initialize_p == 1) goto <D.40054>; else goto <D.40055>;
+  <D.40054>:
+  if (__priority == 65535) goto <D.40056>; else goto <D.40057>;
+  <D.40056>:
+  std::ios_base::Init::Init (&__ioinit);
+  __cxa_atexit (__dt_comp , &__ioinit, &__dso_handle);
+  goto <D.40058>;
+  <D.40057>:
+  <D.40058>:
+  goto <D.40059>;
+  <D.40055>:
+  <D.40059>:
+}
+
+
+_GLOBAL__sub_I_main ()
+{
+  __static_initialization_and_destruction_0 (1, 65535);
+}
+
+
