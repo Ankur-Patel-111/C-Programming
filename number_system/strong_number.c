@@ -14,7 +14,6 @@ void main()
 			fact=fact*i;
 		}
 		sum=sum+fact;
-		num=num/10;
 	}
 	if(temp==sum)
 		printf("Strong number\n");
