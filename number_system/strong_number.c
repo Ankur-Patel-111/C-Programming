@@ -1,4 +1,4 @@
- // fisrt code is wrong
+ // Strong Number.
 #include<stdio.h>
 void main()
 {
