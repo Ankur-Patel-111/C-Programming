@@ -1,0 +1,149 @@
+## C Backup class 29-12-2023 
+
+Bitwise operator <<  , >>
+
+Bitwise operator  &   |   ^  <<   >>   ~
+
+p-1
+int main()
+{
+int a=0xabc, b=0x234;
+int res;
+res=a|b;
+printf("%x\n",res);
+}
+----------------------------------------------------
+                          a          b      c
+00000000000  1010   1011  1100
+00000000000   0010  0011  0100
+------------------------------------------------------
+00000000000    1010   1011   1100
+
+-----------------------------------------------------------------------------
+p-2
+#include<stdio.h>
+int main()
+{
+int a=31,res;
+res=a>>2
+printf("%d\n",res);
+}
+Sol = 000000000000000000011111   // 31
+         00000000000000000001111  // 31 >>1
+         00000000000000000000111  // 31 >>2
+Note : Number is positive starting put zero(0) and than Nagative number is there put 1.
+--------------------------------------------------------------------------------------
+p-3 #include<stdio.h>
+int main()
+{
+int a=0x2468,res;
+res=a>>7;
+printf("%x",res);  //48
+}
+
+0000000000000  0010 0100 0110 1000   //0x2468
+in Right shift you need to put left side adding zero.
+0000000000000  0000  0100  1000   // 0x48
+0000000000000   000    001             // in  octal
+----------------------------------------------------------------------
+p-4
+#include<stdio.h>
+int main()
+{
+int a= -41 ,res;
+res=a >> 3;
+printf("%d",res);   //  before write answer check 31'st number 1 than put -ve (- Nagative sign)
+}
+000000000000000000101001  // 41
+111111111111111111010110  // 1'S comp
+                                            +1  // 2'S comp
+-------------------------------------------------------
+11111111111111111010111 // -41
+-------------------------------------------------------
+000000000000000000000110  // 6
+-----------------------------------------------------------------
+Note = imp in interviewer is asking : delete bit in right side and put left side 0 and 31'st bit 1 is there again 1;st complement and put 1 (out of memory) Note : if sign variable declare than put 1 and variable unsigned declare than put 0. printf("%u",n)= output is come into only positive  .
+
+p-5 
+#include<stdio.h>
+int main()
+{
+unsigned int a=-41;
+res=a>>24;
+printf("%d",res);  // 255
+}
+-----------------------------------------
+p-6
+#include<stdio.h>
+int main()
+{
+int a=0x8765,res;
+res=a<<5;
+printf("%x\n",res); //
+}
+---------------------------------------
+Note : Left shift doing Left side bit delete and right side put 0 .
+Solution : 
+000000000000000000  1000 0111 0110 0101
+000000000000000000  
+------------------------------------------------------
+In interview asking How to particular bit set, clear, toggle, 
+
+p-1
+#include<stdio.h>
+int main()
+{
+int a=-15,res;
+res=a << 4;
+printf("%d",res);
+}
+---------------------------------------------
+0000000000000000000001111  //15
+1111111111111111111110000 // 1's comp
+                                                +1
+-------------------------------------------------------------
+11111111111111111111110001  // -15
+
+11111111111111111111100010000
+00000000000000000000011101111
+                                                      +1
+------------------------------------------------------------
+00000000000000000000011110000 // 16+32+64+128
+
+p-2  How to set particular bit?
+
+#include<stdio.h>
+int main()
+{
+int n=15,pos=6,res;
+printf("%d",n); // 15
+n = n | (1 << pos );
+printf("%d",n);   // 79
+}
+Solution = 
+0000000000000000000000001111 // 15
+
+0000000000000000000000000001 //1
+0000000000000000000001000000  // 1 <<6
+0000000000000000000000001111  //15
+--------------------------------------------------------
+0000000000000000000001001111  // 15+64
+
+p-2 How to clear a bit.
+#include<stdio.h>
+int main()
+{
+int n=15,pos=3,res;  // 3rd bit clear
+printf("%d",n);
+n= n & ~ (1<<pos);
+printf("%d",n);  //
+}
+
+Solution :
+000000000000000001111 //15
+
+000000000000000000001 //1
+000000000000000001000  // 1 << 3
+
+1111111111111111110111  // ~(1    )
+------------------------------------------------------------------
