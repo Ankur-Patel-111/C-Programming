@@ -1,0 +1,61 @@
+## C - Backup class 30-12-2023.
+
+p-1 How to Delete a particular bit.
+
+p-1
+int main()
+{
+int a=10, b=0,c;
+c = a && b;
+printf("%d",c);  //
+}
+op1 || op2 //
+T || F = T
+F || F = F
+T || T = T
+F || T = T
+-----------------------
+op1 && 
+op1 && op2 =
+T && T = T
+F && T = F
+T && F = F
+F && F = F
+-------------------------------------------------
+p-2
+#include<stdio.h>
+int main()
+{
+int a=10,b=0,c;
+c = (a=22) || (b=33);
+printf("%d",a);  //22
+printf("%d",b);  //0
+printf("%d",c);  //1
+}
+-----------------------------------------------
+
+p-4
+#include<stdio.h>
+int main()
+{
+int a=10,b=0,c;
+c = (a=22) && (b=33);
+printf("%d",a);  // 0  
+printf("%d",b);  // 0
+printf("%d",c);  // 0
+}
+-----------------------------------------------
+p-5
+#include<stdio.h>
+int main()
+{
+int a=10,b=0,c;
+c = (a!=11) && (b=22);
+printf("%d",a);  // 10  
+printf("%d",b);  //  22
+printf("%d",c);  // 0
+}
+-----------------------------------------------
+
+
+
