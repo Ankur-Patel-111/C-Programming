@@ -1,0 +1,111 @@
+ ## C Backup class 03-01-2023. without any function implement strstr
+
+**User Defined Function = strstr ,strlen,strchar,strcmp,strcpy
+
+p-1 Find s main string in to sub string is present without function.
+m[] = "embedded";
+s[]="be";
+
+Note : now our requirement is this word is present in main string ,but predefined function is also there but our own create user defined function to implement a Logic.
+
+Note : Declaration need to understand Compiler of which type of function implement. Function declaration and function Defination is both are Equal.
+
+Raf Logic.
+for(i=0;m[i];i++)
+{
+if(m[i]==s[0])  i=2 m[2]==s[0]
+{
+for(j=1;s[j];j++)
+{
+if(s[j]!=m[j+i])
+break;
+}
+if(s[j]=='\0')
+printf("Sub string pesent\n");
+}
+}
+
+Actual Program.
+P-1
+#include<stdio.h>
+void main()
+{
+char m[50],s[10];
+int i,j;
+printf("Enter the main string\n");
+scanf("%[^\n]",m);
+printf("Enter the sub string:\n");
+scanf("%[^\n]",s);
+for(i=0;m[i];i++)
+{
+if(m[i]==s[0])
+{
+for(j=1;s[j];j++)
+{
+if(m[i+j]!=s[j])  // string comparision logic that's why apply this logic implemented.
+break;
+}
+if(s[j]=='\0')
+{
+printf("Pressent in main string\n");
+//return m;
+else            // Note : here else not proper work in this case like ex. embedded , embeddbaed = in this case first o/p = present and 2 o/p is Not present.
+printf("Not Present\n");  
+}
+}
+}
+printf("Not present\n");
+}
+----------------------------------------------------------
+p-2  reference purpose
+s1[]="abc" , s2[]="abc";
+for(i=0;s1[i];i++)
+{
+if(s1[i]!=s2[i])
+break;
+}
+
+Note  : sub string means only one character and any words you calling.
+-----------------------------------------------------------------------------------
+Note : in gcc compile you can set a total line of digit you can put one command =  :set nu
+---------------------------------------------------------------------------------
+Note : in function only all this logic is put in the Function Defination.
+
+-------------------------------------------------------------------------------------
+
+Function program STRSTR.
+--> in function first of you declare a function declaration Before the main() and after the main you can declare error / warning will come.
+-->in this first string is Main string and second string is Sub string.
+#include<stdio.h>
+const char  my_strstr(const char * , const char *); // both are read only pointer.  
+// strstr function returns address of sub string in main string if sub string is not found it will return null.
+
+// Function calling.
+const char *p = my_strstr(m,s);
+if(p==0)
+printf("Sub string is not present\n");
+else
+printf("Sub string is present  @ %p location\n",);
+
+void main()
+{
+// Function defination write below the main.
+const char * my_strstr(const char *m , const char *s)
+// after you copy paste to after scanf to all the code.
+}
+-----------------------------------------------------------------------------
+ p-2 // Repeate in Array and String 
+// our requirement is how many time is repeate Digit is present. 
+#include<stdio.h>
+void main()
+{
+int a[10]={1,2,3,1,2,3,1,6,4,5},i,j,k,c;
+for(i=0;s[i];i++)
+{
+for(j=i+1,c=0;s[j];j++)
+if(s[i]==s[j])
+c++;
+printf("%d is present  %d times\n",s[i],c);
+}
+}
+-----------------------------------------------------------------------------------------------------------
