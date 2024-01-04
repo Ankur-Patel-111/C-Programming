@@ -1,0 +1,212 @@
+C Backup - 04/01/2024
+
+while / do-while
+p-1
+WAP in c to print even number.
+1 to 15.
+o/p = 2,4,6,8,10,12,14
+#include<stdio.h>
+int main()
+{
+int n=1;
+while(n<15)
+{
+if(n%2==0)
+printf("%d",n);
+}
+}
+
+
+
+
+-----------------------------------------------------------
+p-2
+wap in cprint alternatiive even number
+b/w 1 to 15
+o/p : 2 6 10 14 
+
+int main()
+{
+int n=1,c=0;
+while(n<15)
+{
+if(n%2==0)
+{
+c++;
+if(c%2)
+printf("%d",n); // 2 6 10 14
+}
+n++;
+}
+}
+----------------------------------------------------------------
+p-3 wap in c to given series 
+o/p= 1   2      4      7    11    16
+       +1  +2    +3     +4       +5 
+ 
+#include<stdio.h>
+int main()
+{
+int n=1,i=0;
+while(i<6)      {0<6, 1<6 , 2<6 ,3<6, }
+{
+// logic //
+n=n+i;  { 0+1, 1+1 , 
+printf("%d",...);
+i++;
+}
+}
+-------------------------------------------------------
+Assignnment =1 
+Assig-1 o/p = 16,11,7,4,2,1
+----------------------------------------------------------------
+p-4 WAP to reverse a number.
+
+i/p = 234.     200 + 30 + 4
+o/p = 432.   400  + 30 + 2
+
+#include<stdio.h>
+int main()
+{
+int n=234,r,s=0;
+while( n )    234 True , 23 True , 2 True , 0 False
+{
+r=n%10;
+s=s*10+r;   // 0+4
+n=n/10;
+}
+printf("%d\n",s); // 432
+printf("%d\n",n); //  0
+printf("%d\n",r);  //  2 
+}
+ 
+-----------------------------------------------------------------
+
+p-1 WAP in  to print 1st digit of given number.
+
+#include<stdio.h>
+int main()
+{
+int n=123456,r;
+while(n)
+{
+r=n%10;  // 6  5  4  3   2   1
+n=n/10;
+}
+printf("%d\n",r);  // 1
+}
+----------------------------------------------------------------------------------
+Assignment - 2.
+ Assign -2 = WAP in c to print sum of 1 st digit and last digit of given number.
+------------------------------------------------------------------------------
+Factor : Any number 1 and itself divisible
+10 ---> 1 , 2 , 5 , 10.
+12 ---> 1 , 2 , 3, 4 , 6 , 12.
+
+P-6 WAP in c to print factor of given number.
+#include<stdio.h>
+int main()
+{
+int n,i=1;
+printf("Enter the number\n");
+scanf("%d",&n);
+while(i<=n)
+{
+// write a logic here
+if(n%i==0)
+printf("%d\n",i);  // 1   5 
+i++;
+}
+}
+-----------------------------------------------
+P-7. WAP  in c check given number is prime or not .
+prime = two factor are there 1 and itself its called as prime number.
+
+#include<stdio.h>
+void main()
+{
+int n,i=1,c=0;
+printf("Enter the number\n");
+scanf(%d",&n);
+while(i<=n)
+{
+if(n%i==0)
+{
+c++;
+}
+i++;
+}
+if(c==2)
+printf("Yes Prime number \n");
+else
+printf("Not a Prime number\n");
+}
+---------------------------------------------------------------------
+P - 8  
+WAP c in to  check given number is perfect number or not.
+Perfect number = 6 , 28
+// 6 ----> 1,2,3 // 1+2+3 = 6 in this 6 is excluded.
+
+#include<stdio.h>
+void main()
+{
+int n,i=1,s=0;
+printf("Enter the number\n");
+scanf("%d",&n);
+while("%d",&n);
+if(n%i==0)
+{
+s=s+i;
+}
+
+
+}
+------------------------------------------------------
+P-9 
+WAP check Palindrome number
+n = 234;
+Rev = 432
+n==rev // 234 ==432
+Note : in this original number is strore in another number like num1 = num // here number is store in num1.
+
+--------------------------------------------------------------
+Strong :   // Factorial
+Armstrong :
+--------------------------------------------------------------------------------
+P-10
+WAP find Factorial number .
+5 ---> 5*4*3*2*1 = 120
+4--->    4*3*2*1 = 24
+
+#include<stdio.h>
+int main()
+{
+int n=5,fact=1 ;  // in case in program sum = 0.
+ // Logic
+// using while loop
+while ( n )
+{
+fact = fact * n ; // 1 * 5 
+n--
+}
+printf("%d\n", fact);  // 120
+}
+----------------------------------------------------------------
+ P - 11  WAP program to fine number of Power.
+power (2,5)  // 2 * 2 *2 * 2 *2 // 32 
+           power (5,3) // 5 * 5 * 5 // 125
+// power // math.h // cc -lm p1.c      (lm = Library and Math)
+// printf();  // scnaf();   // glibc
+
+#include<stdio.h>
+int main()
+{
+int n,p;
+scanf("%d %d", &n,&p); // 3 4   // 3 * 3 * 3 * 3
+while(p)
+{
+a = a * n;
+p - -;
+}
+printf("%d\n",  );
+}
