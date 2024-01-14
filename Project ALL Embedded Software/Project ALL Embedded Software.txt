@@ -1,0 +1,57 @@
+	VECTOR PROJECT:
+1.	Student Database Record
+In this project, I created a student database project which uses dynamic memory to store the student record.it has the feature of arranging student records according to alphabetical order along with proper data assignment.
+
+----------------------------------------------------------------------------------
+
+	ACADEMIC PROJECT:
+2. Gas leakage detector using Arduino
+In this project, I plan to secure a place from gas leakage using alert systems in modern buildings, schools, hotels, etc. For sensing the flammable gases, we are using an MQ-6 gas sensor with Arduino in this project. When the LPG gas is detected by the gas sensor in the LPG gas leakage detector using Arduino, the LED will glow and the buzzer will sound.
+
+
+CAREER OBJECTIVE :
+•	Looking for an organization where I can utilize my knowledge and from my learning give my best to the organization.
+      CAREER OBJECTIVE:
+ 
+Email ID: adityasinhsisodiya1@gmail.com Contact: +91 9328540598
+LinkedIn: linkedin.com/in/adityasinh-sisodiya-b942a2294
+ 
+
+	Search for the position in the progressive company where skills for the Software & Embedded System Development and Communication can be utilize effectively for the benefit of the company.
+
+
+
+
+
+
+Vector major project : Smart Parking Assistance (using CAN protocol)
+•	I designed an ultrasonic parking assistance system using the LPC2129 microcontroller and CAN protocol. The setup includes a master transmitter and a receiver node, along with components like LED indicators, a buzzer, and a display module. Ultrasonic sensors measure distances, and the master node sends this data to the receiver through CAN. The receiver triggers LED blinking, buzzer sounds, and display updates based on distance. A switch allows switching between front and back sensors for focused parking assistance.
+
+      Academic project : ASOSD (Automatic and Sensor operated sanitizer and dustbin)
+•	The smart dustbin and sanitizer is a carefully designed solution that solves the social issue of touch, the smart dustbin identifies the kind of material being thrown inside it and segregates it into bio or non-biodegradable and the sanitizer identifies the kind of human that near at sensor and pushed its pump and released material once.
+
+
+
+1.	Pre-processor Development Using “make” Utility:
+In this project, I have implemented the following task of Pre-processor stage:
+	Including header file, single line and multi-line comment removal, macro without argument replacement, macro with argument replacement
+
+2.	Body Control Module (Using CAN Protocol):
+In this project, I have worked on ARM(LPC2129) in which I did communication between 2 CAN Controllers (2 ECUs). I have written one code on BCM ECU to send data frame to LCM ECU. Body control module (BCM) ECU controls the LEDs connected to Light Control module (LCM) ECU which are acts like Indicator (blinking of indicator and at a time only one indicator will be on) and Head light of the real car.
+
+3.	Data Acquisition System (Using UART & SPI Protocols):
+I have designed Data Acquisition System, which consists of LPC2129 ARM7 based micro-controller, temperature sensor (MCP9700), Potentiometer, 10bit ADC, 12bit SPI ADC, Light Dependent Resister, 16x2 alphanumeric LCD to monitor the parameter . like Atmospheric Temperature, Voltage level and Light intensity
+
+1.	Implemented My Own String Datatype (STRING) in C++
+I have designed my own string datatype named STRING in C++, which consists of all type constructor, destructor, member functions (includes +, =, <, >, <=, >=, ==, =! Operator overloading) and friend functions (includes <<, >> Operator overloading, getline() and all predefined string related functions).
+
+2.	Maintained Student Data Base Using Singled Linked List
+I have maintained Student Database Records like Roll number, Name, Percentage details using Data structure, in which based on the menu displayed on screen, user can perform certain task likes to insert, delete, modify, reversing the list, saving the records inside file, etc.
+
+
+
+
+
+
+
+ 
