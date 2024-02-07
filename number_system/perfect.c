@@ -13,9 +13,7 @@ void main()
 		}
 	}
 	if(sum==num)
-	{
 		printf("Perfect number = %d\n",sum);
-	}
 	else
 		printf("Not Perfect\n");
 }
